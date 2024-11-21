@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #73c5eb;
+  color: #84d8d8;
   text-decoration: none;
 }
 
@@ -371,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background: #3f5d8f;
 }
 
 #hero .container {
@@ -509,6 +509,10 @@ section {
   background-color: #f3f5fa;
 }
 
+#experience{
+  background-color: #a3d3ea;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -541,7 +545,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #47b2e4;
+  background: #02121a;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -630,7 +634,7 @@ section {
 }
 
 .about .content .btn-learn-more:hover {
-  background: #47b2e4;
+  background: #000507;
   color: #fff;
   text-decoration: none;
 }
@@ -766,7 +770,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: #a7c4f7;
   font-family: "Poppins", sans-serif;
 }
 
@@ -782,7 +786,7 @@ section {
 .skills .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: #47b2e4;
+  color: #000508;
 }
 
 .skills .content p:last-child {
