@@ -433,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+ /* animation: up-down 2s ease-in-out infinite alternate-reverse both;*/
 }
 
 @media (max-width: 991px) {
@@ -449,7 +449,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   #hero .hero-img img {
-    width: 50%;
+    height: auto;
+    width: 10%;
   }
 }
 
@@ -464,13 +465,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
   #hero .hero-img img {
-    width: 70%;
+    width: 10%;
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 200px) {
   #hero .hero-img img {
-    width: 80%;
+    width: 10%;
   }
   #hero .btn-get-started {
     font-size: 16px;
