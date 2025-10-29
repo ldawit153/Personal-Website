@@ -51,7 +51,7 @@
           <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-800 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">Get in touch</a>
         </div>
       </div>
-      <img src="assets/img/hero-img.png" alt="Levi" class="w-full max-w-md mx-auto rounded-3xl shadow-soft" />
+      <img src="assets/img/hero-img.jpeg" alt="Levi" class="w-full max-w-md mx-auto rounded-3xl shadow-soft" />
     </div>
   </section>
 
@@ -66,6 +66,15 @@
       <div class="rounded-2xl border p-5">
         <p class="text-sm font-medium text-slate-500">Frameworks & Tools</p>
         <div class="mt-3 flex flex-wrap gap-2 text-sm"><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">React</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">React Native</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Node</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">FastAPI</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Docker</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">GitHub</span></div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="rounded-2xl border p-5">
+      <p class="text-sm font-medium text-slate-500">Certifications</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <span class="px-3 py-1.5 rounded-xl bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200">AWS Certified Cloud Practitioner</span>
+        <span class="px-3 py-1.5 rounded-xl bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-200">AWS Certified Solutions Architect – Associate</span>
       </div>
     </div>
   </section>
@@ -114,50 +123,62 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="mx-auto max-w-6xl px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-semibold">Projects</h2>
-    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- ScaleScan -->
-      <article class="rounded-2xl border p-5">
-        <div class="aspect-video rounded-xl bg-slate-100 dark:bg-slate-800 overflow-hidden"><img src="assets/img/scalescan.png" alt="ScaleScan" class="w-full h-full object-cover" /></div>
-        <h3 class="mt-4 text-lg font-semibold">ScaleScan</h3>
-        <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1">
-          <li>iOS app that scans weight tickets and sends structured data to dispatch.</li>
-          <li>Reduced manual entry time by 30% with OCR + async processing.</li>
-          <li>Built with React Native, REST API, and image processing.</li>
-        </ul>
-      </article>
-      <!-- Course Review -->
-      <article class="rounded-2xl border p-5">
-        <div class="aspect-video rounded-xl bg-slate-100 dark:bg-slate-800 overflow-hidden"><img src="assets/img/courseapp.png" alt="Course Review" class="w-full h-full object-cover" /></div>
-        <h3 class="mt-4 text-lg font-semibold">Course Review Application</h3>
-        <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1">
-          <li>Web app for students to review courses and instructors.</li>
-          <li>Helps improve selection decisions and community feedback loops.</li>
-          <li>Developed using Java and SQLite.</li>
-        </ul>
-      </article>
-<!-- Social Sage AI -->
-<article class="rounded-2xl border p-5">
-<div class="relative aspect-video rounded-xl overflow-hidden">
-<img src="assets/img/socialsage.png" alt="Social Sage AI" class="absolute inset-0 w-full h-full object-cover" />
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
-<div class="absolute inset-0 p-4 flex items-end">
-<div>
-<h3 class="text-lg font-semibold text-white">Social Sage AI</h3>
-<ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-200 marker:text-slate-300">
-<li>Generative AI pipeline for social media captions/posts using Amazon Bedrock + LLMs.</li>
-<li>Fully serverless backend with Lambda, Step Functions, API Gateway, DynamoDB.</li>
-<li>React frontend for input + near real‑time AI results.</li>
-<li>Emphasized scalability, low‑latency inference, and fault‑tolerant cloud design.</li>
-<li>TypeScript, Node.js, AWS Bedrock, Step Functions, DynamoDB, React (May 2025 – Present).</li>
-</ul>
-</div>
-</div>
-</div>
-</article>
-</div>
+<section id="projects" class="mx-auto max-w-6xl px-4 py-16">
+  <h2 class="text-2xl md:text-3xl font-semibold">Projects</h2>
+
+  <!-- more breathing room between cards -->
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+
+    <!-- Card helper classes to reuse -->
+    <!-- image wrapper: padded, centers img, keeps aspect -->
+    <!-- img: object-contain to avoid cropping -->
+    <!-- article: equal height cards -->
+    <!-- You can copy these classes to all cards -->
+
+    <!-- ScaleScan -->
+    <article class="rounded-2xl border p-5 h-full flex flex-col bg-slate-900/30 hover:bg-slate-900/40 transition">
+      <div class="aspect-video rounded-xl bg-slate-100/5 dark:bg-slate-800/40 overflow-hidden p-4 flex items-center justify-center">
+        <img src="assets/img/scalescan.png" alt="ScaleScan" class="w-full h-full object-contain" />
+      </div>
+      <h3 class="mt-4 text-lg font-semibold text-white">ScaleScan</h3>
+      <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1 text-slate-300">
+        <li>iOS app that scans weight tickets and sends structured data to dispatch.</li>
+        <li>Reduced manual entry time by 30% with OCR + async processing.</li>
+        <li>Built with React Native, REST API, and image processing.</li>
+      </ul>
+    </article>
+
+    <!-- Course Review -->
+    <article class="rounded-2xl border p-5 h-full flex flex-col bg-slate-900/30 hover:bg-slate-900/40 transition">
+      <div class="aspect-video rounded-xl bg-slate-100/5 dark:bg-slate-800/40 overflow-hidden p-4 flex items-center justify-center">
+        <img src="assets/img/courseapp.png" alt="Course Review" class="w-full h-full object-contain" />
+      </div>
+      <h3 class="mt-4 text-lg font-semibold text-white">Course Review Application</h3>
+      <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1 text-slate-300">
+        <li>Web app for students to review courses and instructors.</li>
+        <li>Helps improve selection decisions and community feedback loops.</li>
+        <li>Developed using Java and SQLite.</li>
+      </ul>
+    </article>
+
+    <!-- Social Sage AI -->
+    <article class="rounded-2xl border p-5 h-full flex flex-col bg-slate-900/30 hover:bg-slate-900/40 transition">
+      <div class="aspect-video rounded-xl bg-slate-100/5 dark:bg-slate-800/40 overflow-hidden p-4 flex items-center justify-center">
+        <img src="assets/img/socialsage.png" alt="Social Sage AI" class="w-full h-full object-contain" />
+      </div>
+      <h3 class="mt-4 text-lg font-semibold text-white">Social Sage AI</h3>
+      <ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-300 marker:text-slate-400">
+        <li>Generative AI pipeline for social media captions/posts using Amazon Bedrock + LLMs.</li>
+        <li>Fully serverless backend with Lambda, Step Functions, API Gateway, DynamoDB.</li>
+        <li>React frontend for input + near real-time AI results.</li>
+        <li>Emphasized scalability, low-latency inference, and fault-tolerant cloud design.</li>
+        <li>TypeScript, Node.js, AWS Bedrock, Step Functions, DynamoDB, React (May 2025 – Present).</li>
+      </ul>
+    </article>
+
+  </div>
 </section>
+
   <!-- Contact -->
   <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
     <div class="rounded-3xl border p-8 bg-white/60 dark:bg-slate-900/40">
@@ -165,8 +186,8 @@
       <p class="mt-2 text-slate-600 dark:text-slate-300">University of Virginia, Charlottesville, VA</p>
       <div class="mt-6 flex gap-3">
         <a href="mailto:levidawit@gmail.com" class="inline-flex items-center gap-2 rounded-xl bg-accent text-white px-4 py-2 font-medium hover:bg-accent-600 shadow-soft">Email me</a>
-        <a href="https://github.com/levidawit" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">GitHub</a>
-        <a href="https://www.linkedin.com/in/levidawit" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">LinkedIn</a>
+        <a href="https://github.com/ldawit153" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">GitHub</a>
+        <a href="https://www.linkedin.com/in/levi-dawit/" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">LinkedIn</a>
       </div>
     </div>
   </section>
