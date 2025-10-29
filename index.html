@@ -1,489 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth dark">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title> Levi Dawit</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Arsha - v4.3.0
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Levi Dawit</title>
+  <meta name="description" content="Levi Dawit — UVA CS student. Software engineering, data engineering, and project leadership." />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: { accent: { DEFAULT: '#6366F1', 600: '#4F46E5', 700: '#4338CA' } },
+          boxShadow: { soft: '0 10px 30px -12px rgba(2,6,23,.35)' }
+        }
+      }
+    }
+  </script>
+  <style>.bg-grid{background-image:radial-gradient(rgba(100,116,139,.15) 1px,transparent 1px);background-size:16px 16px}</style>
 </head>
+<body class="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight">LEVI DAWIT</a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-accent">About</a>
+        <a href="#skills" class="hover:text-accent">Skills</a>
+        <a href="#education" class="hover:text-accent">Education</a>
+        <a href="#experience" class="hover:text-accent">Experience</a>
+        <a href="#projects" class="hover:text-accent">Projects</a>
+        <a href="#contact" class="hover:text-accent">Contact</a>
+      </nav>
+      <a href="assets/levidresume.pdf" download class="hidden sm:inline-flex items-center gap-2 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-3.5 py-2 text-sm font-medium hover:opacity-90 shadow-soft">Resume</a>
+    </div>
+  </header>
 
-<body>
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid pointer-events-none"></div>
+    <div class="mx-auto max-w-6xl px-4 pt-20 pb-16 grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <p class="text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">UVA CS • Software Engineer</p>
+        <h1 class="mt-3 text-4xl md:text-6xl font-semibold">Hi, I'm Levi Dawit</h1>
+        <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl">I am a computer science student at the University of Virginia with a passion for software engineering and building practical solutions. I have experience in app development, data engineering, and project leadership. I focus on efficiency, accuracy, and shipping real features.</p>
+        <div class="mt-8 flex gap-3">
+          <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-accent text-white px-4 py-2 font-medium hover:bg-accent-600 shadow-soft">View Projects</a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-800 px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">Get in touch</a>
+        </div>
+      </div>
+      <img src="assets/img/hero-img.png" alt="Levi" class="w-full max-w-md mx-auto rounded-3xl shadow-soft" />
+    </div>
+  </section>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+  <!-- Skills -->
+  <section id="skills" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold">Skills</h2>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border p-5">
+        <p class="text-sm font-medium text-slate-500">Languages</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-sm"><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Java</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">C/C++</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Python</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">TypeScript</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Swift</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">SQL</span></div>
+      </div>
+      <div class="rounded-2xl border p-5">
+        <p class="text-sm font-medium text-slate-500">Frameworks & Tools</p>
+        <div class="mt-3 flex flex-wrap gap-2 text-sm"><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">React</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">React Native</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Node</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">FastAPI</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">Docker</span><span class="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800">GitHub</span></div>
+      </div>
+    </div>
+  </section>
 
-      <h1 class="logo me-auto"><a href="index.html">LEVI DAWIT</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-    
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">About</a></li>
-          <li><a class="nav-link scrollto" href="#about">Skills</a></li>
-          <li><a class="nav-link scrollto" href="#services">Education</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Projects</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          
+  <!-- Education -->
+  <section id="education" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold">Education</h2>
+    <div class="mt-6 grid md:grid-cols-7 gap-8">
+      <div class="md:col-span-4 rounded-2xl border p-5">
+        <h3 class="font-medium">University of Virginia</h3>
+        <p class="text-sm text-slate-500">B.S. Computer Science • 2022–2026</p>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Relevant courses: Data Structures, Computer Systems, Software Engineering, Cybersecurity, Machine Learning.</p>
+      </div>
+      <div class="md:col-span-3 rounded-2xl border p-5">
+        <h3 class="font-medium">Woodberry Forest School</h3>
+        <p class="text-sm text-slate-500">2019–2022</p>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Graduated with honors. Varsity football and track.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience ABOVE Projects -->
+  <section id="experience" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold">Experience</h2>
+    <ol class="mt-6 relative border-s border-slate-200 dark:border-slate-800">
+      <li class="pl-6 pb-8 relative">
+        <span class="absolute left-[-6px] top-1.5 inline-block h-3 w-3 rounded-full bg-accent"></span>
+        <div class="flex justify-between flex-wrap gap-2"><p class="font-medium">Amazon Web Services (AWS) — Solutions Architect Intern</p><p class="text-sm text-slate-500">May 2025 – Aug 2025 • Austin, TX</p></div>
+        <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1">
+          <li>Built a full‑stack React app on serverless AWS (Lambda, API Gateway, Step Functions, DynamoDB) to transform scraped data into AI‑generated social posts, reducing manual content creation by 70%.</li>
+          <li>Automated pipelines with SAM/CDK, cutting end‑to‑end delivery from minutes to <10s.</li>
+          <li>Integrated LLMs via Amazon Bedrock for secure, scalable generation across multiple content types.</li>
+          <li>Reviewed design for cost and reliability, lowering ops costs by 35%.</li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </li>
+      <li class="pl-6 pb-1 relative">
+        <span class="absolute left-[-6px] top-1.5 inline-block h-3 w-3 rounded-full bg-accent"></span>
+        <div class="flex justify-between flex-wrap gap-2"><p class="font-medium">Interstate Moving — Software Engineering Intern</p><p class="text-sm text-slate-500">May 2024 – Aug 2024 • Springfield, VA</p></div>
+        <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1">
+          <li>Designed and launched an iOS app (Swift, REST) for scanning/transmitting weight tickets, cutting manual data entry by 30%.</li>
+          <li>Implemented secure, real‑time data transmission between drivers and dispatch.</li>
+          <li>Gathered requirements and iterated through testing for high adoption and fewer errors.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
 
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Hi, I'm Levi Dawit</h1>
-          <h2>I’m Levi Dawit, a computer science student at the University of Virginia with a passion for software engineering and building innovative solutions. With experience in app development, data engineering, and project leadership, I thrive at the intersection of technology and problem-solving to create impactful projects that enhance efficiency and accuracy.</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="assets/resume1113.pdf" class="btn-get-started scrollto" download="Levi_Dawit_resume.pdf">Download my Resume</a>
-            
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="" style="width: 85%; height: auto;" >
-        </div>
+  <!-- Projects -->
+  <section id="projects" class="mx-auto max-w-6xl px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-semibold">Projects</h2>
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- ScaleScan -->
+      <article class="rounded-2xl border p-5">
+        <div class="aspect-video rounded-xl bg-slate-100 dark:bg-slate-800 overflow-hidden"><img src="assets/img/scalescan.png" alt="ScaleScan" class="w-full h-full object-cover" /></div>
+        <h3 class="mt-4 text-lg font-semibold">ScaleScan</h3>
+        <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1">
+          <li>iOS app that scans weight tickets and sends structured data to dispatch.</li>
+          <li>Reduced manual entry time by 30% with OCR + async processing.</li>
+          <li>Built with React Native, REST API, and image processing.</li>
+        </ul>
+      </article>
+      <!-- Course Review -->
+      <article class="rounded-2xl border p-5">
+        <div class="aspect-video rounded-xl bg-slate-100 dark:bg-slate-800 overflow-hidden"><img src="assets/img/courseapp.png" alt="Course Review" class="w-full h-full object-cover" /></div>
+        <h3 class="mt-4 text-lg font-semibold">Course Review Application</h3>
+        <ul class="mt-2 text-sm list-disc marker:text-slate-400 pl-5 space-y-1">
+          <li>Web app for students to review courses and instructors.</li>
+          <li>Helps improve selection decisions and community feedback loops.</li>
+          <li>Developed using Java and SQLite.</li>
+        </ul>
+      </article>
+<!-- Social Sage AI -->
+<article class="rounded-2xl border p-5">
+<div class="relative aspect-video rounded-xl overflow-hidden">
+<img src="assets/img/socialsage.png" alt="Social Sage AI" class="absolute inset-0 w-full h-full object-cover" />
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent"></div>
+<div class="absolute inset-0 p-4 flex items-end">
+<div>
+<h3 class="text-lg font-semibold text-white">Social Sage AI</h3>
+<ul class="mt-2 text-sm list-disc pl-5 space-y-1 text-slate-200 marker:text-slate-300">
+<li>Generative AI pipeline for social media captions/posts using Amazon Bedrock + LLMs.</li>
+<li>Fully serverless backend with Lambda, Step Functions, API Gateway, DynamoDB.</li>
+<li>React frontend for input + near real‑time AI results.</li>
+<li>Emphasized scalability, low‑latency inference, and fault‑tolerant cloud design.</li>
+<li>TypeScript, Node.js, AWS Bedrock, Step Functions, DynamoDB, React (May 2025 – Present).</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="rounded-3xl border p-8 bg-white/60 dark:bg-slate-900/40">
+      <h2 class="text-2xl md:text-3xl font-semibold">Contact</h2>
+      <p class="mt-2 text-slate-600 dark:text-slate-300">University of Virginia, Charlottesville, VA</p>
+      <div class="mt-6 flex gap-3">
+        <a href="mailto:levidawit@gmail.com" class="inline-flex items-center gap-2 rounded-xl bg-accent text-white px-4 py-2 font-medium hover:bg-accent-600 shadow-soft">Email me</a>
+        <a href="https://github.com/levidawit" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">GitHub</a>
+        <a href="https://www.linkedin.com/in/levidawit" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-900">LinkedIn</a>
       </div>
     </div>
+  </section>
 
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Cliens Section ======= -->
-    <section id="cliens" class="cliens section-bg">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Cliens Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>SKILLS</h2>
-        </div>
-    
-        <div class="row">
-          <div class="col-lg-6">
-            <ul>
-              <li><strong>Languages:</strong> Java, C/C++, Python, C, TypeScript, Swift, PyTorch, R, HTML/CSS, SQL, Matlab </li>
-              <li><strong>Frameworks:</strong> React,Flutter, JUnit, React,FastAPI, AWS, Firebase, Google Cloud Platform, React Native, NodeJS,
-                ReactJS, Flask, Docker, Pandas, WebSocket, Git, REST APIs</li>
-             <li><strong>Databases:</strong> Oracle, MySQL, PostgreSQL, MongoDB, PL/SQL</li>
-            </ul>
-          </div>
-    
-          <div class="col-lg-6">
-            <ul>
-              <li><strong>Web Development:</strong> HTML5, XML, CSS, JavaScript</li>
-              <li><strong>Design Tools and IDEs:</strong> Eclipse, IntelliJ, Visual Studio</li>
-              <li><strong>Operating Systems:</strong>  Windows, MacOS, Linux</li>
-              <li><strong>Other Tools:</strong> Maven, Gradle, Git, GitHub</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Education ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3><strong>University of Virginia, School of Engineering and Applied Science</strong></h3>
-            
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>2022-2026</span> Bachelor's of Science in Computer Science<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Relevant Courses:  
-                      Data Structures 1 and 2,
-                      Computer Systems and Organizations 1 and 2,  
-                      Software Development Essentials and Software Engineering,
-                      Introduction to Cybersecurity,
-                      Machine Learning,
-                      Discrete Mathematics
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>2019-2022</span> Woodberry Forest School <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Prestigious private boarding school focusing on academic excellence and leadership. Graduated with honors and developed a strong foundation in science and critical thinking. Varsity Football and Track Athlete
-                    </p>
-        
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <!-- Skills Image -->
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/skills.png" class="img-fluid" alt="Skills Infographic">
-          </div>
-    
-          <!-- Skills Content -->
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3><strong>Skills Infographic</strong></h3>
-            <div class="skills-content">
-    
-              <div class="progress">
-                <span class="skill">Java <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <span class="skill">C/C++ <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <span class="skill">Python <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-    
-              <div class="progress">
-                <span class="skill">TypeScript <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-    
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Skills Section -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3><strong>Experience</strong></h3>
-            
-            </div>
-            <div class="row justify-content-center align-items-center">
-              <!-- Left Content -->
-              <div class="col-lg-6 d-flex flex-column">
-                <div class="accordion-list">
-                  <ul>
-                    <li>
-                      <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1">
-                        <span>May 2024-Aug 2024</span> Interstate Moving and Logistics: Data Engineering Intern
-                        <i class="bx bx-chevron-down icon-show"></i>
-                        <i class="bx bx-chevron-up icon-close"></i>
-                      </a>
-                      <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                        <p>
-                          Last summer, I gained hands-on data engineering experience by developing a solution to streamline data collection and processing. I created a mobile app, ScaleScan, which allowed drivers to scan weight tickets and securely transmit data to a dispatch system via a REST API. This reduced manual entry time by 30%, increased data accuracy, and optimized image processing for real-time updates using asynchronous methods.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            
-              <!-- Right Image -->
-              <div class="col-lg-4 d-flex justify-content-end">
-                <img src="assets/img/interstate.png" alt="Interstate Moving and Logistics" class="img-fluid" style="max-width: 80%; height: auto; margin-right: 10px;">
-              </div>
-            </div>
-           
-
-      </div>
-    </section>
-    <!-- ======= Experience Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Projects </h2>
-        </div>
-        <div class="row">
-          <!-- ScaleScan -->
-          <div class="col-xl-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-mobile"></i></div>
-              <h4>
-                <a href=""><strong>ScaleScan</strong></a>
-                <small style="color: gray; display: block; font-size: 0.85em;">Technologies: React Native, REST APIs, Image Processing</small>
-              </h4>
-              <p>
-                ScaleScan is an iOS app developed to streamline data entry for drivers by allowing them to scan weight tickets directly 
-                from their phones. This app reduces manual data entry time by 30% and increases data accuracy for dispatch operations. 
-                It leverages a REST API for secure data transmission and optimized image processing for real-time updates.
-              </p>
-            </div>
-          </div>
-        
-          <!-- Course Review Application -->
-          <div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-book"></i></div>
-              <h4>
-                <a href=""><strong>Course Review Application</strong></a>
-                <small style="color: gray; display: block; font-size: 0.85em;">Technologies: Java, SQlite</small>
-              </h4>
-              <p>
-                A web application created to allow students to review and rate their courses and professors. This project helps 
-                enhance decision-making for course selection while fostering community feedback. Developed using modern web technologies 
-                to ensure a user-friendly interface and robust functionality.
-              </p>
-            </div>
-          </div>
-        </div>
-
-         
-    
-
-          
-      </div>
-    </section><!-- End Services Section -->
-
-
-
-    
-   
-
-   
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>University of Virginia, Charlottesville, VA</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>levidawit@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 202-792-9217</p>
-              </div>
-
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Levi Dawit</h3>
-            <p>
-            Charlottesville, VA<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 202 792 9217<br>
-              <strong>Email:</strong> levidawit@gmail.com<br>
-            </p>
-          </div>
-
-
-
-          
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>My Social Networks</h4>
-            <p>Feel free to check me out on LinkedIn and Github</p>
-            <div class="social-links mt-3">
-              <a href="#" class="github"><i class="bx bxl-github"></i></a>
-              
-              
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
+  <footer class="mx-auto max-w-6xl px-4 pb-10 pt-6 text-sm text-slate-500">
+    <div class="flex flex-col sm:flex-row justify-between gap-2">
+      <p>© <span id="year"></span> Levi Dawit. All rights reserved.</p>
+      <a href="#home" class="hover:text-accent">Back to top ↑</a>
     </div>
+  </footer>
 
-    <div class="container footer-bottom clearfix">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Levi Dawit</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
- 
-        
-      </div>
-
-    
-    
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
+<html lang="en" class="scroll-smooth dark">
 
 </html>
